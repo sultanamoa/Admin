@@ -7,7 +7,7 @@
     <br>
     <br>
     <a href="https://pi-hole.net/">
-        <img src="https://pi-hole.github.io/graphics/Screenshots/pihole-dashboard.png" alt="Pi-hole Web interface">
+        <img src="https://github.com/sultanamoa/PI-Hole/blob/master/login.JPG" alt="Pi-hole Web interface">
     </a>
 </p>
 
