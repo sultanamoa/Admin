@@ -168,7 +168,7 @@
     <meta http-equiv="cache-control" content="max-age=60,private">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pi-hole<?php echo $hostname ? " - " . $hostname : "" ?></title>
+    <title>نظام الشبكة الآمنة<?php echo $hostname ? " - " . $hostname : "" ?></title>
 
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
     <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
@@ -214,8 +214,8 @@
     <!-- JS Warning -->
     <div>
         <input type="checkbox" id="js-hide">
-        <div class="js-warn" id="js-warn-exit"><h1>JavaScript Is Disabled</h1><p>JavaScript is required for the site to function.</p>
-            <p>To learn how to enable JavaScript click <a href="https://www.enable-javascript.com/" rel="noopener" target="_blank">here</a></p><label for="js-hide">Close</label>
+        <div class="js-warn" id="js-warn-exit"><h1>برنامج الجافا لا يعمل</h1><p>هذه الصفحة تحتاج لبرنامج الجافة حتى تعمل بشكل صحيح</p>
+            <p>لمعرفة كيفية تفعيل الجافا انقر<a href="https://www.enable-javascript.com/" rel="noopener" target="_blank">هنا</a></p><label for="js-hide">Close</label>
         </div>
     </div>
     <!-- /JS Warning -->
@@ -235,7 +235,7 @@ if($auth) {
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini">P<strong>h</strong></span>
             <!-- logo for regular state and mobile devices -->
-            <span class="logo-lg">Pi-<strong>hole</strong></span>
+            <span class="logo-lg"><strong>نظام الشبكـــة الآمنــة</strong></span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top">
@@ -253,22 +253,22 @@ if($auth) {
                     </li>
                     <li<?php echo !$hostname ? ' class="hidden"' : "" ?>>
                         <p class="navbar-text">
-                            <span class="hidden-xs hidden-sm">hostname:</span>
+                            <span class="hidden-xs hidden-sm">اسم السيرفر:</span>
                             <code><?php echo $hostname; ?></code>
                         </p>
                     </li>
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                             <img src="img/logo.svg" class="user-image" alt="Pi-hole logo" style="border-radius: 0" width="25" height="25">
-                            <span class="hidden-xs">Pi-hole</span>
+                            <span class="hidden-xs">بدون إعلانات</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
                                 <img src="img/logo.svg" alt="Pi-hole Logo" style="border: 0" width="90" height="90">
                                 <p>
-                                    Open Source Ad Blocker
-                                    <small>Designed For Raspberry Pi</small>
+                                    برنامج مفتوح المصدر لحجب الإعلانات
+                                    <small>مصمم للعمل على اجهزة رازبري باي</small>
                                 </p>
                             </li>
                             <!-- Menu Body -->
@@ -313,7 +313,7 @@ if($auth) {
                     <img src="img/logo.svg" alt="Pi-hole logo" width="45" height="67" style="height: 67px;">
                 </div>
                 <div class="pull-left info">
-                    <p>Status</p>
+                    <p>حالــة النظــام</p>
                         <?php
                         $pistatus = pihole_execute('status web');
                         if (isset($pistatus[0])) {
@@ -322,13 +322,13 @@ if($auth) {
                             $pistatus = null;
                         }
                         if ($pistatus === "1") {
-                            echo '<span id="status"><i class="fa fa-circle text-green-light"></i> Active</span>';
+                            echo '<span id="status"><i class="fa fa-circle text-green-light"></i>يعمل</span>';
                         } elseif ($pistatus === "0") {
-                            echo '<span id="status"><i class="fa fa-circle text-red"></i> Offline</span>';
+                            echo '<span id="status"><i class="fa fa-circle text-red"></i> متوقف</span>';
                         } elseif ($pistatus === "-1") {
-                            echo '<span id="status"><i class="fa fa-circle text-red"></i> DNS service not running</span>';
+                            echo '<span id="status"><i class="fa fa-circle text-red"></i> خدمة النطاق لا تعمل</span>';
                         } else {
-                            echo '<span id="status"><i class="fa fa-circle text-orange"></i> Unknown</span>';
+                            echo '<span id="status"><i class="fa fa-circle text-orange"></i> غير معروف</span>';
                         }
 
                         // CPU Temp
@@ -343,12 +343,12 @@ if($auth) {
                                 {
                                     echo "text-vivid-blue";
                                 }
-                                ?>"\"></i> Temp:&nbsp;<span id="rawtemp" hidden><?php echo $celsius;?></span><span id="tempdisplay"></span><?php
+                                ?>"\"></i> الحرارة:&nbsp;<span id="rawtemp" hidden><?php echo $celsius;?></span><span id="tempdisplay"></span><?php
                             }
                         }
                         else
                         {
-                            echo '<span id=\"temperature\"><i class="fa fa-circle text-red"></i> FTL offline</span>';
+                            echo '<span id=\"temperature\"><i class="fa fa-circle text-red"></i> FTL لا يعمل</span>';
                         }
                     ?>
                     <br/>
@@ -375,7 +375,7 @@ if($auth) {
                         }
                         if($memory_usage > 0.0)
                         {
-                            echo "\"></i> Memory usage:&nbsp;&nbsp;" . sprintf("%.1f",100.0*$memory_usage) . "&thinsp;%</span>";
+                            echo "\"></i> نسبة استخدام الذاكرة :&nbsp;&nbsp;" . sprintf("%.1f",100.0*$memory_usage) . "&thinsp;%</span>";
                         }
                         else
                         {
@@ -403,23 +403,23 @@ if($auth) {
             }
             ?>
             <ul class="sidebar-menu" data-widget="tree">
-                <li class="header text-uppercase">Main navigation</li>
+                <li class="header text-uppercase">الواجهة الرئيسية</li>
                 <!-- Home Page -->
                 <li<?php if($scriptname === "index.php"){ ?> class="active"<?php } ?>>
                     <a href="index.php">
-                        <i class="fa fa-home"></i> <span>Dashboard</span>
+                        <i class="fa fa-home"></i> <span>نظرة عامة</span>
                     </a>
                 </li>
                 <?php if($auth){ ?>
                 <!-- Query Log -->
                 <li<?php if($scriptname === "queries.php"){ ?> class="active"<?php } ?>>
                     <a href="queries.php">
-                        <i class="fa fa-file-alt"></i> <span>Query Log</span>
+                        <i class="fa fa-file-alt"></i> <span>اجراء بحث</span>
                     </a>
                 </li>
                 <li class="treeview<?php if($scriptname === "db_queries.php" || $scriptname === "db_lists.php" || $scriptname === "db_graph.php"){ ?> active<?php } ?>">
                   <a href="#">
-                    <i class="fa fa-clock"></i> <span>Long-term data</span>
+                    <i class="fa fa-clock"></i> <span>بيانات طويلة الاجل</span>
                     <span class="pull-right-container">
                       <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -427,17 +427,17 @@ if($auth) {
                   <ul class="treeview-menu">
                     <li<?php if($scriptname === "db_graph.php"){ ?> class="active"<?php } ?>>
                         <a href="db_graph.php">
-                            <i class="fa fa-file-alt"></i> Graphics
+                            <i class="fa fa-file-alt"></i> السجلات
                         </a>
                     </li>
                     <li<?php if($scriptname === "db_queries.php"){ ?> class="active"<?php } ?>>
                         <a href="db_queries.php">
-                            <i class="fa fa-file-alt"></i> Query Log
+                            <i class="fa fa-file-alt"></i> اجراء بحث
                         </a>
                     </li>
                     <li<?php if($scriptname === "db_lists.php"){ ?> class="active"<?php } ?>>
                         <a href="db_lists.php">
-                            <i class="fa fa-file-alt"></i> Top Lists
+                            <i class="fa fa-file-alt"></i> اعلى سجل
                         </a>
                     </li>
                   </ul>
@@ -445,25 +445,25 @@ if($auth) {
                 <!-- Whitelist -->
                 <li<?php if($scriptname === "whitelist"){ ?> class="active"<?php } ?>>
                     <a href="groups-domains.php?type=white">
-                        <i class="fa fa-check-circle "></i> <span>Whitelist</span>
+                        <i class="fa fa-check-circle "></i> <span>القائمة البيضاء</span>
                     </a>
                 </li>
                 <!-- Blacklist -->
                 <li<?php if($scriptname === "blacklist"){ ?> class="active"<?php } ?>>
                     <a href="groups-domains.php?type=black">
-                        <i class="fa fa-ban"></i> <span>Blacklist</span>
+                        <i class="fa fa-ban"></i> <span>القائمة السوداء</span>
                     </a>
                 </li>
                 <!-- Local DNS Records -->
                 <li<?php if($scriptname === "dns_records.php"){ ?> class="active"<?php } ?>>
                     <a href="dns_records.php">
-                        <i class="fa fa-address-book"></i> <span>Local DNS Records</span>
+                        <i class="fa fa-address-book"></i> <span>اسماء النطاقات الداخلية</span>
                     </a>
                 </li>
                 <!-- Group Management -->
                 <li class="treeview<?php if (in_array($scriptname, array("groups.php", "groups-adlists.php", "groups-clients.php", "groups-domains.php"))){ ?> active<?php } ?>">
                   <a href="#">
-                    <i class="fa fa-users-cog"></i> <span>Group Management</span>
+                    <i class="fa fa-users-cog"></i> <span>التحكم بالمجموعات</span>
                     <span class="pull-right-container">
                       <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -471,22 +471,22 @@ if($auth) {
                   <ul class="treeview-menu">
                     <li<?php if($scriptname === "groups.php"){ ?> class="active"<?php } ?>>
                         <a href="groups.php">
-                            <i class="fa fa-user-friends"></i> Groups
+                            <i class="fa fa-user-friends"></i> المجموعات
                         </a>
                     </li>
                     <li<?php if($scriptname === "groups-clients.php"){ ?> class="active"<?php } ?>>
                         <a href="groups-clients.php">
-                            <i class="fa fa-laptop"></i> Clients
+                            <i class="fa fa-laptop"></i> المستخدمين
                         </a>
                     </li>
                     <li<?php if($scriptname === "groups-domains.php"){ ?> class="active"<?php } ?>>
                         <a href="groups-domains.php">
-                            <i class="fa fa-list"></i> Domains
+                            <i class="fa fa-list"></i> النطاقات
                         </a>
                     </li>
                     <li<?php if($scriptname === "groups-adlists.php"){ ?> class="active"<?php } ?>>
                         <a href="groups-adlists.php">
-                            <i class="fa fa-shield-alt"></i> Adlists
+                            <i class="fa fa-shield-alt"></i> قائمة المواقع الدعائية
                         </a>
                     </li>
                   </ul>
@@ -497,32 +497,32 @@ if($auth) {
                     <span class="pull-right-container">
                       <i class="fa fa-angle-left pull-right"></i>
                     </span>
-                    <i class="fa fa-stop"></i> <span>Disable&nbsp;&nbsp;&nbsp;<span id="flip-status-disable"></span></span>
+                    <i class="fa fa-stop"></i> <span>تعطيل&nbsp;&nbsp;&nbsp;<span id="flip-status-disable"></span></span>
                   </a>
                   <ul class="treeview-menu">
                     <li>
                         <a href="#" id="pihole-disable-indefinitely">
-                            <i class="fa fa-stop"></i> Indefinitely
+                            <i class="fa fa-stop"></i> تعطيل بشكل دائم
                         </a>
                     </li>
                     <li>
                         <a href="#" id="pihole-disable-10s">
-                            <i class="fa fa-clock"></i> For 10 seconds
+                            <i class="fa fa-clock"></i> تعطيل 10 ثواني
                         </a>
                     </li>
                     <li>
                         <a href="#" id="pihole-disable-30s">
-                            <i class="fa fa-clock"></i> For 30 seconds
+                            <i class="fa fa-clock"></i> تعطيل 30 ثانية
                         </a>
                     </li>
                     <li>
                         <a href="#" id="pihole-disable-5m">
-                            <i class="fa fas fa-clock"></i> For 5 minutes
+                            <i class="fa fas fa-clock"></i> تعطيل 5 دقائق
                         </a>
                     </li>
                     <li>
                       <a href="#" id="pihole-disable-cst" data-toggle="modal" data-target="#customDisableModal">
-                            <i class="fa fa-clock"></i> <span>Custom time</span>
+                            <i class="fa fa-clock"></i> <span>أوقات مختارة</span>
                       </a>
                     </li>
                   </ul>
@@ -531,7 +531,7 @@ if($auth) {
                 <li id="pihole-enable" class="treeview"<?php if ($pistatus == "1") { ?> hidden<?php } ?>>
                     <a href="#">
                       <i class="fa fa-play"></i>
-                      <span id="enableLabel">Enable&nbsp;&nbsp;&nbsp;
+                      <span id="enableLabel">تمكين&nbsp;&nbsp;&nbsp;
                         <span id="flip-status-enable"></span>
                       </span>
                     </a>
@@ -539,7 +539,7 @@ if($auth) {
                 <!-- Tools -->
                 <li class="treeview<?php if (in_array($scriptname, array("messages.php", "gravity.php", "queryads.php", "auditlog.php", "taillog.php", "taillog-FTL.php", "debug.php", "network.php"))){ ?> active<?php } ?>">
                   <a href="#">
-                    <i class="fa fa-folder"></i> <span>Tools</span>
+                    <i class="fa fa-folder"></i> <span>الأدوات</span>
                     <span class="pull-right-container">
                       <i class="fa fa-angle-left pull-right"></i>
                     </span>
@@ -548,49 +548,49 @@ if($auth) {
                     <!-- Pi-hole diagnosis -->
                     <li<?php if($scriptname === "messages.php"){ ?> class="active"<?php } ?>>
                         <a href="messages.php">
-                            <i class="fa fa-stethoscope"></i> Pi-hole diagnosis
+                            <i class="fa fa-stethoscope"></i> فحص النظام دايوقنوستك
                         </a>
                     </li>
                     <!-- Run gravity.sh -->
                     <li<?php if($scriptname === "gravity.php"){ ?> class="active"<?php } ?>>
                         <a href="gravity.php">
-                            <i class="fa fa-arrow-circle-down"></i> Update Gravity
+                            <i class="fa fa-arrow-circle-down"></i> تحديث قائمة المواقع
                         </a>
                     </li>
                     <!-- Query Lists -->
                     <li<?php if($scriptname === "queryads.php"){ ?> class="active"<?php } ?>>
                         <a href="queryads.php">
-                            <i class="fa fa-search"></i> Query Lists
+                            <i class="fa fa-search"></i> اجراء قائمة بحث
                         </a>
                     </li>
                     <!-- Audit log -->
                     <li<?php if($scriptname === "auditlog.php"){ ?> class="active"<?php } ?>>
                         <a href="auditlog.php">
-                            <i class="fa fa-balance-scale"></i> Audit log
+                            <i class="fa fa-balance-scale"></i> سجل الاحداث
                         </a>
                     </li>
                     <!-- Tail pihole.log -->
                     <li<?php if($scriptname === "taillog.php"){ ?> class="active"<?php } ?>>
                         <a href="taillog.php">
-                            <i class="fa fa-list-ul"></i> Tail pihole.log
+                            <i class="fa fa-list-ul"></i> سجل احداث النظام مباشر
                         </a>
                     </li>
                     <!-- Tail pihole-FTL.log -->
                     <li<?php if($scriptname === "taillog-FTL.php"){ ?> class="active"<?php } ?>>
                         <a href="taillog-FTL.php">
-                            <i class="fa fa-list-ul"></i> Tail pihole-FTL.log
+                            <i class="fa fa-list-ul"></i> سجل احداث ال FTL
                         </a>
                     </li>
                     <!-- Generate debug log -->
                     <li<?php if($scriptname === "debug.php"){ ?> class="active"<?php } ?>>
                         <a href="debug.php">
-                            <i class="fa fa-ambulance"></i> Generate debug log
+                            <i class="fa fa-ambulance"></i> التحقق من العثور على اخطاء
                         </a>
                     </li>
                     <!-- Network -->
                     <li<?php if($scriptname === "network.php"){ ?> class="active"<?php } ?>>
                         <a href="network.php">
-                            <i class="fa fa-network-wired"></i> Network
+                            <i class="fa fa-network-wired"></i> الشبكة
                         </a>
                     </li>
                   </ul>
@@ -598,7 +598,7 @@ if($auth) {
                 <!-- Settings -->
                 <li<?php if($scriptname === "settings.php"){ ?> class="active"<?php } ?>>
                     <a href="settings.php">
-                        <i class="fa fa-cogs"></i> <span>Settings</span>
+                        <i class="fa fa-cogs"></i> <span>الإعدادات</span>
                     </a>
                 </li>
                 <!-- Logout -->
@@ -607,7 +607,7 @@ if($auth) {
                 if(strlen($pwhash) > 0) { ?>
                 <li>
                     <a href="?logout">
-                        <i class="fa fa-user-times"></i> <span>Logout</span>
+                        <i class="fa fa-user-times"></i> <span>تسجيل خروج</span>
                     </a>
                 </li>
                 <?php } ?>
@@ -618,20 +618,16 @@ if($auth) {
                 if(strlen($pwhash) > 0 && !$auth) { ?>
                 <li<?php if($scriptname === "login"){ ?> class="active"<?php } ?>>
                     <a href="index.php?login">
-                        <i class="fa fa-user"></i> <span>Login</span>
+                        <i class="fa fa-user"></i> <span>تسجيل دخول</span>
                     </a>
                 </li>
                 <?php } ?>
                 <!-- Donate -->
-                <li>
-                    <a href="https://pi-hole.net/donate/" rel="noopener" target="_blank">
-                        <i class="fab fa-paypal"></i> <span>Donate</span>
-                    </a>
-                </li>
+
                  <!-- Docs -->
                  <li>
                     <a href="https://docs.pi-hole.net/" rel="noopener" target="_blank">
-                        <i class="fa fa-question-circle"></i> <span>Documentation</span>
+                        <i class="fa fa-question-circle"></i> <span>لمزيد من المعلومات</span>
                     </a>
                 </li>
             </ul>

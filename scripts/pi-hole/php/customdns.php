@@ -11,7 +11,7 @@
         check_cors();
         check_csrf($_POST['token']);
     } else {
-        log_and_die('Not allowed (login session invalid or expired, please relogin on the Pi-hole dashboard)!');
+        log_and_die('غير مسموح (الصفحة اللتي تحاول الاتصال بها غير موجوده,الرجاء اعادة تحديث الصفحة)!');
     }
 
 

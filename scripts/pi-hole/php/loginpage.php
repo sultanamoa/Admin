@@ -14,12 +14,12 @@
       </div>
       <br>
 
-      <div class="panel-title text-center"><span class="logo-lg" style="font-size: 25px;">Pi-<b>hole</b></span></div>
-      <p class="login-box-msg">Sign in to start your session</p>
-      <div id="cookieInfo" class="panel-title text-center text-red" style="font-size: 150%" hidden>Verify that cookies are allowed for <code><?php echo $_SERVER['HTTP_HOST']; ?></code></div>
+      <div class="panel-title text-center"><span class="logo-lg" style="font-size: 25px;"><b>نظام الشبكـــة الآمنة</b></span></div>
+      <p class="login-box-msg">قم التسجيل لبدا الجلسة</p>
+      <div id="cookieInfo" class="panel-title text-center text-red" style="font-size: 150%" hidden>تأكد من الكعكات مفعلة<code><?php echo $_SERVER['HTTP_HOST']; ?></code></div>
       <?php if ($wrongpassword) { ?>
         <div class="form-group has-error login-box-msg">
-          <label class="control-label"><i class="fa fa-times-circle"></i> Wrong password!</label>
+          <label class="control-label"><i class="fa fa-times-circle"></i> الرقم السري خاطئ</label>
         </div>
       <?php } ?>
     </div>
@@ -33,15 +33,15 @@
         <div class="row">
           <div class="col-xs-8 hidden-xs hidden-sm">
           <ul>
-            <li><kbd>Return</kbd> &rarr; Log in and go to requested page (<?php echo $scriptname; ?>)</li>
-            <li><kbd>Ctrl</kbd>+<kbd>Return</kbd> &rarr; Log in and go to Settings page</li>
+            <li><kbd>Return</kbd> &rarr; قم تالتسجيل والذهاب لصفحة البدء (<?php echo $scriptname; ?>)</li>
+            <li><kbd>Ctrl</kbd>+<kbd>Return</kbd> &rarr; قم بالتسجيل والذهاب للوحة الإعدادات</li>
           </ul>
           </div>
           <div class="col-xs-12 col-md-4">
               <div class="pull-right">
                 <div>
                   <input type="checkbox" id="logincookie" name="persistentlogin">
-                  <label for="logincookie">Remember me for 7 days</label>
+                  <label for="logincookie">تذكرني خلال 7 ايام</label>
                 </div>
             </div>
             <button type="submit" class="btn btn-primary pull-right"><i class="fas fa-sign-in-alt"></i>&nbsp;&nbsp;&nbsp;Log in</button>
@@ -53,7 +53,7 @@
             <div class="box box-<?php if (!$wrongpassword) { ?>info<?php } else { ?>danger<?php }
             if (!$wrongpassword) { ?> collapsed-box<?php } ?> box-solid">
               <div class="box-header with-border">
-                <h3 class="box-title">Forgot password</h3>
+                <h3 class="box-title">هل نسيت الرقم السري</h3>
 
                 <div class="box-tools pull-right">
                   <button type="button" class="btn btn-box-tool" data-widget="collapse"><i
@@ -62,9 +62,9 @@
                 </div>
               </div>
               <div class="box-body">
-                After installing Pi-hole for the first time, a password is generated and displayed to the user. The
-                password cannot be retrieved later on, but it is possible to set a new password (or explicitly disable
-                the password by setting an empty password) using the command
+                بعد تثبيت النظام لأول مرة ، يتم إنشاء كلمة مرور وعرضها للمستخدم. ال
+                لا يمكن استرداد كلمة المرور لاحقًا ، ولكن من الممكن تعيين كلمة مرور جديدة (أو تعطيلها بشكل صريح
+                كلمة المرور عن طريق تعيين كلمة مرور فارغة) باستخدام الأمر
                 <pre>sudo pihole -a -p</pre>
               </div>
             </div>

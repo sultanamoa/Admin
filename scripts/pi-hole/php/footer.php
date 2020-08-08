@@ -15,7 +15,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Custom disable timeout</h4>
+                    <h4 class="modal-title" id="myModalLabel">ضع وقت لتعطيل الفلتر</h4>
                 </div>
                 <div class="modal-body">
                     <div class="input-group">
@@ -31,8 +31,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" id="pihole-disable-custom" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">اغلاق</button>
+                    <button type="button" id="pihole-disable-custom" class="btn btn-primary" data-dismiss="modal">تنفيذ</button>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
     <footer class="main-footer">
         <div class="row row-centered text-center">
             <div class="col-xs-12 col-sm-6">
-                <strong><a href="https://pi-hole.net/donate/" rel="noopener" target="_blank"><i class="fa fa-heart text-red"></i> Donate</a></strong> if you found this useful.
+                <strong><a href="https://twitter.com/Sultan_Alhajlh" rel="noopener" target="_blank"><i class="fa fa-heart text-red"></i> أنقر هنا</a></strong> لمزيد من المعلومات التقنية.
             </div>
         </div>
 
@@ -70,19 +70,19 @@
             <div class="col-xs-12 col-sm-8 col-md-6">
                 <?php if (isset($core_commit) || isset($web_commit) || isset($FTL_commit)) { ?>
                 <ul class="list-unstyled">
-                    <li><strong>Pi-hole</strong> <?php echo $coreVersionStr; ?></li>
-                    <li><strong>Web Interface</strong> <?php echo $webVersionStr; ?></li>
+                    <li><strong>حجب المواقع</strong> <?php echo $coreVersionStr; ?></li>
+                    <li><strong>نظام التشغيل</strong> <?php echo $webVersionStr; ?></li>
                     <li><strong>FTL</strong> <?php echo $ftlVersionStr; ?></li>
                 </ul>
                 <?php } else { ?>
                 <ul class="list-inline">
                     <li>
-                        <strong>Pi-hole</strong>
+                        <strong>حجب المواقع</strong>
                         <a href="<?php echo $coreReleasesUrl . "/" . $core_current; ?>" rel="noopener" target="_blank"><?php echo $core_current; ?></a>
                         <?php if ($core_update) { ?> &middot; <a class="lookatme" href="<?php echo $coreReleasesUrl . "/latest"; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
                     </li>
                     <li>
-                        <strong>Web Interface</strong>
+                        <strong>نظام التشغيل</strong>
                         <a href="<?php echo $webReleasesUrl . "/" . $web_current; ?>" rel="noopener" target="_blank"><?php echo $web_current; ?></a>
                         <?php if ($web_update) { ?> &middot; <a class="lookatme" href="<?php echo $webReleasesUrl . "/latest"; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
                     </li>
