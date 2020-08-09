@@ -46,14 +46,14 @@
     //  - determines local and remote version every 30 minutes
 #    require "scripts/pi-hole/php/update_checker.php";
 
-#    $coreVersionStr = $core_current . (isset($core_commit) ? " (" . $core_branch . ", " . $core_commit . ")" : "");
-#    $webVersionStr = $web_current . (isset($web_commit) ? " (" . $web_branch . ", " . $web_commit . ")" : "");
+     $coreVersionStr = $core_current . (isset($core_commit) ? " (" . $core_branch . ", " . $core_commit . ")" : "");
+     $webVersionStr = $web_current . (isset($web_commit) ? " (" . $web_branch . ", " . $web_commit . ")" : "");
 #    $ftlVersionStr = $FTL_current . (isset($FTL_commit) ? " (" . $FTL_branch . ", " . $FTL_commit . ")" : "");
 
 #   $githubBaseUrl = "https://github.com/pi-hole";
 #   $coreUrl = $githubBaseUrl . "/pi-hole";
 #   $webUrl = $githubBaseUrl . "/AdminLTE";
-#   $ftlUrl = $githubBaseUrl . "/FTL";
+    $ftlUrl = $githubBaseUrl . "/FTL";
 
 #   $coreReleasesUrl = $coreUrl . "/releases";
 #    $webReleasesUrl = $webUrl . "/releases";
@@ -72,7 +72,7 @@
                 <ul class="list-unstyled">
                     <li><strong>حجب المواقع</strong> <?php echo $coreVersionStr; ?></li>
                     <li><strong>نظام التشغيل</strong> <?php echo $webVersionStr; ?></li>
-                    <li><strong>FTL</strong> <?php echo $ftlVersionStr; ?></li>
+                    <li><strong>FTL</strong> <?php echo ; ?></li>
                 </ul>
                 <?php } else { ?>
                 <ul class="list-inline">
