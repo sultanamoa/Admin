@@ -57,7 +57,7 @@
 
     $coreReleasesUrl = $coreUrl . "/releases";
     $webReleasesUrl = $webUrl . "/releases";
-    $ftlReleasesUrl = $ftlUrl . "/releases";
+#   $ftlReleasesUrl = $ftlUrl . "/releases";
 ?>
     <footer class="main-footer">
         <div class="row row-centered text-center">
@@ -86,11 +86,11 @@
                         <a href="<?php echo $webReleasesUrl . "/" . $web_current; ?>" rel="noopener" target="_blank"><?php echo $web_current; ?></a>
                         <?php if ($web_update) { ?> &middot; <a class="lookatme" href="<?php echo $webReleasesUrl . "/latest"; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
                     </li>
-                    <li>
+                   # <li>
                         <strong>FTL</strong>
                         <a href="<?php echo $ftlReleasesUrl . "/" . $FTL_current; ?>" rel="noopener" target="_blank"><?php echo $FTL_current; ?></a>
                         <?php if ($FTL_update) { ?> &middot; <a class="lookatme" href="<?php echo $ftlReleasesUrl . "/latest"; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
-                    </li>
+                 #   </li>
                 </ul>
                 <?php } ?>
             </div>
