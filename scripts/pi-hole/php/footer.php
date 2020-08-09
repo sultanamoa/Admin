@@ -78,13 +78,10 @@
                 <ul class="list-inline">
                     <li>
                         <strong>حجب المواقع</strong>
-                  #      <a href="<?php echo $coreReleasesUrl . "/" . $core_current; ?>" rel="noopener" target="_blank"><?php echo $core_current; ?></a>
-                 #       <?php if ($core_update) { ?> &middot; <a class="lookatme" href="<?php echo $coreReleasesUrl . "/latest"; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
+                 
                     </li>
                     <li>
                         <strong>نظام التشغيل</strong>
-                 #       <a href="<?php echo $webReleasesUrl . "/" . $web_current; ?>" rel="noopener" target="_blank"><?php echo $web_current; ?></a>
-                  #      <?php if ($web_update) { ?> &middot; <a class="lookatme" href="<?php echo $webReleasesUrl . "/latest"; ?>" rel="noopener" target="_blank">Update available!</a><?php } ?>
                     </li>
 
                 </ul>
