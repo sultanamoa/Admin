@@ -448,7 +448,7 @@ if (isset($_GET['tab']) && in_array($_GET['tab'], array("sysadmin", "adlists", "
                                     <h3 class="box-title">هذه القائمة تستخدم لوضع النطاقات المراد حجبها</h3>
                                 </div>
                                 <div class="box-body">
-                                    <p>الرجاء إختيار <a href="groups-adlists.php">قائمة المجموعات</a>لإضافة نطاقات وحجبها</p>
+                                    <p>الرجاء إختيار <a href="groups-adlists.php"> قائمة المجموعات </a>لإضافة نطاقات وحجبها</p>
                                 </div>
                             </div>
                         </div>
