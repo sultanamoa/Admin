@@ -110,39 +110,39 @@ if(strlen($showing) > 0)
     <div class="col-md-12">
       <div class="box" id="recent-queries">
         <div class="box-header with-border">
-          <h3 class="box-title">Recent Queries <?php echo $showing; ?></h3>
+          <h3 class="box-title"> سجلات البحث الأخيرة <?php echo $showing; ?></h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
             <table id="all-queries" class="table table-striped table-bordered" width="100%">
                 <thead>
                     <tr>
-                        <th>Time</th>
-                        <th>Type</th>
-                        <th>Domain</th>
-                        <th>Client</th>
-                        <th>Status</th>
-                        <th>Reply</th>
-                        <th>Action</th>
+                        <th>الوقت</th>
+                        <th>النوع</th>
+                        <th>النطاق</th>
+                        <th>الجهاز</th>
+                        <th>الحالة</th>
+                        <th>الرد</th>
+                        <th>التنفيذ</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
-                        <th>Time</th>
-                        <th>Type</th>
-                        <th>Domain</th>
-                        <th>Client</th>
-                        <th>Status</th>
-                        <th>Reply</th>
-                        <th>Action</th>
+                        <th>الوقت</th>
+                        <th>النوع</th>
+                        <th>النطاق</th>
+                        <th>الجهاز</th>
+                        <th>الحالة</th>
+                        <th>الرد</th>
+                        <th>التنفيذ</th>
                     </tr>
                 </tfoot>
             </table>
-            <p><strong>Filtering options:</strong></p>
+            <p><strong>خيارات البحث :</strong></p>
             <ul>
-                <li>Use <kbd>Ctrl</kbd> or <kbd>&#8984;</kbd> + <i class="fas fa-mouse-pointer"></i> to add columns to the current filter</li>
-                <li>Use <kbd>Shift</kbd> + <i class="fas fa-mouse-pointer"></i> to remove columns from the current filter</li>
-            </ul><br/><button type="button" id="resetButton" class="btn btn-default btn-sm text-red hidden">Clear filters</button>
+                <li>استخدم  <kbd>Ctrl</kbd> or <kbd>&#8984;</kbd> + <i class="fas fa-mouse-pointer"></i> لأضافة عمود للبحث الحالي</li>
+                <li>استخدم  <kbd>Shift</kbd> + <i class="fas fa-mouse-pointer"></i> لحذف عمود للبحث الحالي </li>
+            </ul><br/><button type="button" id="resetButton" class="btn btn-default btn-sm text-red hidden">إزالة الفلاتر </button>
         </div>
         <!-- /.box-body -->
       </div>
