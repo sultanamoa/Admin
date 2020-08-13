@@ -94,10 +94,10 @@ if(strlen($showing) > 0)
                             <i class="fa fa-times fa-stack-1x fa-inverse"></i>
                         </div>
                     </span>
-                    <div class="alProcessing">Adding <span id="alDomain"></span> to the <span id="alList"></span>...</div>
-                    <div class="alSuccess text-bold text-green" style="display: none"><span id="alDomain"></span> successfully added to the <span id="alList"></span></div>
+                    <div class="alProcessing"> إضافة <span id="alDomain"></span> إلى <span id="alList"></span>...</div>
+                    <div class="alSuccess text-bold text-green" style="display: none"><span id="alDomain"></span> تم الإضافة بنجاح الى <span id="alList"></span></div>
                     <div class="alFailure text-bold text-red" style="display: none">
-                        <span id="alNetErr">Timeout or Network Connection Error!</span>
+                        <span id="alNetErr"> انتهى وقت الجلسة .. او ان الاتصل قد فقد </span>
                         <span id="alCustomErr"></span>
                     </div>
                 </div>
