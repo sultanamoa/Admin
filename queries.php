@@ -140,7 +140,7 @@ if(strlen($showing) > 0)
             </table>
             <p><strong>خيارات البحث :</strong></p>
             <ul>
-                <li>استخدم  <kbd>Ctrl</kbd> or <kbd>&#8984;</kbd> + <i class="fas fa-mouse-pointer"></i> لأضافة عمود للبحث الحالي</li>
+                <li>استخدم  <kbd>Ctrl</kbd> أو <kbd>&#8984;</kbd> + <i class="fas fa-mouse-pointer"></i> لأضافة عمود للبحث الحالي</li>
                 <li>استخدم  <kbd>Shift</kbd> + <i class="fas fa-mouse-pointer"></i> لحذف عمود للبحث الحالي </li>
             </ul><br/><button type="button" id="resetButton" class="btn btn-default btn-sm text-red hidden">إزالة الفلاتر </button>
         </div>
