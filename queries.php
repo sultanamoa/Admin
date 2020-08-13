@@ -54,7 +54,7 @@ else if(isset($_GET["from"]) || isset($_GET["until"]))
 }
 else
 {
-	$showing .= " up to 100 queries";
+	$showing .= " إظهار الى 100 سجل ";
 	$showall = true;
 }
 
