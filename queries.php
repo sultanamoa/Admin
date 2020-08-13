@@ -38,19 +38,19 @@ else
 $showall = false;
 if(isset($_GET["all"]))
 {
-	$showing .= " all queries within the Pi-hole log";
+	$showing .= " إظهار جميع السجلات الموجودة في النظام";
 }
 else if(isset($_GET["client"]))
 {
-	$showing .= " queries for client ".htmlentities($_GET["client"]);
+	$showing .= " سجلات لجهاز ".htmlentities($_GET["client"]);
 }
 else if(isset($_GET["domain"]))
 {
-	$showing .= " queries for domain ".htmlentities($_GET["domain"]);
+	$showing .= " سجلات للنظاقات ".htmlentities($_GET["domain"]);
 }
 else if(isset($_GET["from"]) || isset($_GET["until"]))
 {
-	$showing .= " queries within specified time interval";
+	$showing .= " سجلات في وقت معين";
 }
 else
 {
