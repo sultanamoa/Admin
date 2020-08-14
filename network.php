@@ -18,44 +18,44 @@
     <div class="col-md-12">
       <div class="box" id="network-details">
         <div class="box-header with-border">
-          <h3 class="box-title">Network overview</h3>
+          <h3 class="box-title">نظرة عامة على الشبكة</h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
             <table id="network-entries" class="table table-striped table-bordered" width="100%">
                 <thead>
                     <tr>
-                        <th>IP address</th>
-                        <th>Hardware address</th>
-                        <th>Interface</th>
-                        <th>Hostname</th>
-                        <th>First seen</th>
-                        <th>Last Query</th>
-                        <th>Number of queries</th>
-                        <th>Uses Pi-hole</th>
+                        <th>قائمة العناوين</th>
+                        <th>قائمة عناوين الأجهزة</th>
+                        <th>المجال</th>
+                        <th>اسم الجهاز</th>
+                        <th>أول ظهور</th>
+                        <th>آخر بحث</th>
+                        <th>عدد مرات البحث</th>
+                        <th>يستعمل نظام حماية الشبكة</th>
                     </tr>
                 </thead>
                 <tfoot>
                     <tr>
-                        <th>IP address</th>
-                        <th>Hardware address</th>
-                        <th>Interface</th>
-                        <th>Hostname</th>
-                        <th>First seen</th>
-                        <th>Last Query</th>
-                        <th>Number of queries</th>
-                        <th>Uses Pi-hole</th>
+                        <th>قائمة العناوين</th>
+                        <th>قائمة عناوين الأجهزة</th>
+                        <th>المجال</th>
+                        <th>اسم الجهاز</th>
+                        <th>ول ظهور</th>
+                        <th>آخر بحث</th>
+                        <th>عدد مرات البحث</th>
+                        <th>يستعمل نظام حماية الشبكة</th>
                     </tr>
                 </tfoot>
             </table>
-            <label>Background color: Last query from this device seen ...</label>
+            <label>لون الخلفية : اخر بحث من هذا الجهاز على الشبكة </label>
         <table width="100%">
           <tr class="text-center">
-            <td class="network-recent" width="15%">just now</td>
-            <td class="network-gradient" width="30%">... to ...</td>
-            <td class="network-old" width="15%">24 hours ago</td>
-            <td class="network-older" width="20%">&gt; 24 hours ago</td>
-            <td class="network-never" width="20%">Device does not use Pi-hole</td>
+            <td class="network-recent" width="15%">الآن</td>
+            <td class="network-gradient" width="30%">... من ...</td>
+            <td class="network-old" width="15%">24 ساعة ماضية</td>
+            <td class="network-older" width="20%">&gt; 24 ساعة ماضية</td>
+            <td class="network-never" width="20%">الجهاز لا يستعمل نظام حماية للشبكة</td>
           </tr>
         </table>
         </div>

@@ -9,7 +9,7 @@
 ?>
 <!-- Title -->
 <div class="page-header">
-    <h1>Find Blocked Domain In Lists</h1>
+    <h1> البحث عن المجال المحظور في القوائم </h1>
 </div>
 <div class="row">
   <div class="col-md-12">
@@ -20,8 +20,8 @@
             <input id="domain" type="text" class="form-control" placeholder="Domain to look for (example.com or sub.example.com)">
             <input id="quiet" type="hidden" value="no">
             <span class="input-group-btn">
-              <button type="button" id="btnSearch" class="btn btn-default">Search partial match</button>
-              <button type="button" id="btnSearchExact" class="btn btn-default">Search exact match</button>
+              <button type="button" id="btnSearch" class="btn btn-default"> إبحث عن تطابق جزئي </button>
+              <button type="button" id="btnSearchExact" class="btn btn-default"> ابحث عن تطابق تام </button>
             </span>
           </div>
         </div>

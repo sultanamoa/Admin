@@ -9,14 +9,14 @@
 ?>
 <!-- Title -->
 <div class="page-header">
-    <h1>Generate debug log</h1>
+    <h1>إنشاء سجل التصحيح الأخطاء في النظام </h1>
 </div>
 <div>
     <input type="checkbox" id="upload">
-    <label for="upload">Upload debug log and provide token once finished</label>
+    <label for="upload">تحميل مجلد تصحيح الأخطاء بمجرد الأنتهاء</label>
 </div>
-<p>Once you click this button a debug log will be generated and can automatically be uploaded if we detect a working internet connection.</p>
-<button type="button" id="debugBtn" class="btn btn-lg btn-primary btn-block">Generate debug log</button>
+<p>بمجرد النقر فوق هذا الزر ، سيتم إنشاء سجل تصحيح الأخطاء ويمكن تحميله تلقائيًا</p>
+<button type="button" id="debugBtn" class="btn btn-lg btn-primary btn-block">إنشاء سجل التصحيح</button>
 <pre id="output" style="width: 100%; height: 100%;" hidden></pre>
 
 <script src="scripts/pi-hole/js/debug.js"></script>

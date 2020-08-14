@@ -10,14 +10,14 @@
 
 <!-- Title -->
 <div class="page-header">
-    <h1>Audit log (showing live data)</h1>
+    <h1>سجل التدقيق (إظهار البيانات الحية)</h1>
 </div>
 
 <div class="row">
     <div class="col-xs-12 col-lg-6">
       <div class="box" id="domain-frequency">
         <div class="box-header with-border">
-          <h3 class="box-title">Allowed queries</h3>
+          <h3 class="box-title">الاستفسارات المسموح بها</h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
@@ -25,9 +25,9 @@
                 <table class="table table-bordered">
                   <tbody>
                     <tr>
-                    <th>Domain</th>
-                    <th>Hits</th>
-                    <th>Actions</th>
+                    <th>النطاق</th>
+                    <th>الاستعلامات</th>
+                    <th>الأمر</th>
                     </tr>
                   </tbody>
                 </table>
@@ -45,7 +45,7 @@
     <div class="col-xs-12 col-lg-6">
       <div class="box" id="ad-frequency">
         <div class="box-header with-border">
-          <h3 class="box-title">Blocked queries</h3>
+          <h3 class="box-title">الاستعلامات المحظورة</h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
@@ -53,9 +53,9 @@
                 <table class="table table-bordered">
                   <tbody>
                     <tr>
-                    <th>Domain</th>
-                    <th>Hits</th>
-                    <th>Actions</th>
+                    <th>النطاق</th>
+                    <th>الاستعلامات</th>
+                    <th>الأمر</th>
                     </tr>
                   </tbody>
                 </table>
