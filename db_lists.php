@@ -14,7 +14,7 @@
 
 <!-- Title -->
 <div class="page-header">
-    <h1>Compute Top Lists from the Pi-hole query database</h1>
+    <h1> استعراض أعلى قائمة مواقع من قاعدة بيانات النظام </h1>
 </div>
 
 <div class="row">
@@ -22,7 +22,7 @@
     <div class="box">
       <div class="box-header with-border">
         <h3 class="box-title">
-          Select date and time range
+          قم بتحديد التاريخ والوقت
         </h3>
       </div>
       <div class="box-body">
@@ -42,7 +42,7 @@
 </div>
 
 <div id="timeoutWarning" class="alert alert-warning alert-dismissible fade in" role="alert" hidden>
-    Depending on how large of a range you specified, the request may time out while Pi-hole tries to retrieve all the data.<br/><span id="err"></span>
+    اعتمادًا على حجم الزمن الذي حددته ، قد تنتهي مهلة الطلب بينما يحاول النظام استرداد البيانات <br/><span id="err"></span>
 </div>
 
 <?php
@@ -59,7 +59,7 @@ else
     <div class="<?php echo $tablelayout; ?>">
       <div class="box" id="domain-frequency">
         <div class="box-header with-border">
-          <h3 class="box-title">Top Domains</h3>
+          <h3 class="box-title"> أعلى النطاقات </h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
@@ -67,9 +67,9 @@ else
                 <table class="table table-bordered">
                   <tbody>
                     <tr>
-                    <th>Domain</th>
-                    <th>Hits</th>
-                    <th>Frequency</th>
+                    <th> النطاق</th>
+                    <th> الطلبات</th>
+                    <th> تكرار </th>
                     </tr>
                   </tbody>
                 </table>
@@ -86,7 +86,7 @@ else
     <div class="<?php echo $tablelayout; ?>">
       <div class="box" id="ad-frequency">
         <div class="box-header with-border">
-          <h3 class="box-title">Top Blocked Domains</h3>
+          <h3 class="box-title"> أعلى نطاقات محجوبة </h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
@@ -94,9 +94,9 @@ else
                 <table class="table table-bordered">
                   <tbody>
                     <tr>
-                    <th>Domain</th>
-                    <th>Hits</th>
-                    <th>Frequency</th>
+                    <th> النطاق </th>
+                    <th> الطلبات </th>
+                    <th> التكرار </th>
                     </tr>
                   </tbody>
                 </table>
@@ -113,7 +113,7 @@ else
     <div class="<?php echo $tablelayout; ?>">
       <div class="box" id="client-frequency">
         <div class="box-header with-border">
-          <h3 class="box-title">Top Clients</h3>
+          <h3 class="box-title"> أعلى العناوين </h3>
         </div>
         <!-- /.box-header -->
         <div class="box-body">
@@ -121,9 +121,9 @@ else
                 <table class="table table-bordered">
                   <tbody>
                     <tr>
-                    <th>Client</th>
-                    <th>Requests</th>
-                    <th>Frequency</th>
+                    <th> العنوان </th>
+                    <th> الطلبات </th>
+                    <th> التكرار </th>
                     </tr>
                   </tbody>
                 </table>
