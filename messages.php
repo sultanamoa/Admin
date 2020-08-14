@@ -10,8 +10,8 @@
 
 <!-- Title -->
 <div class="page-header">
-    <h1>Pi-hole diagnosis</h1>
-    <small>On this page, you can see messages from your Pi-hole concerning possible issues.</small>
+    <h1> تشخيص النظام </h1>
+    <small> في هذه الصفحة يمكنك مشاهدة رسائل من النظام بخصوص مشاكل محتملة </small>
 </div>
 
 <div class="row">
@@ -23,9 +23,9 @@
                     <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Time</th>
-                        <th>Type</th>
-                        <th>Message</th>
+                        <th>الوقت</th>
+                        <th>النوع</th>
+                        <th>الرسالة</th>
                         <th>Data1</th>
                         <th>Data2</th>
                         <th>Data3</th>
