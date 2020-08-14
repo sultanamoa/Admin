@@ -75,7 +75,7 @@
                                         <input id="new_regex" type="text" class="form-control active" placeholder="RegEx to be added">
                                     </div>
                                     <div class="form-group">
-                                        <strong> تلميح:</strong> هل تحتاج إلى مساعدة في كتابة قاعدة RegEx مناسبة؟ الق نظرة على موقعنا على الانترنت
+                                        <strong> تلميح:</strong> هل تحتاج مساعدة في كتابة التعبيرات . هناك 
                                         <a href="https://docs.pi-hole.net/ftldns/regex/tutorial" rel="noopener" target="_blank">
                                             برنامج تعليمي عن التعبيرات العادية</a>.
                                     </div>
