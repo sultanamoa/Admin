@@ -7,7 +7,7 @@
 *    Please see LICENSE file for your rights under this license. */
     require "scripts/pi-hole/php/header.php";
     $type = "all";
-    $pagetitle = "Domain";
+    $pagetitle = "نطاقات";
     $adjective = "";
     if (isset($_GET['type']) && ($_GET['type'] === "white" || $_GET['type'] === "black")) {
         $type = $_GET['type'];
@@ -18,7 +18,7 @@
 
 <!-- Title -->
 <div class="page-header">
-    <h1><?php echo $pagetitle; ?> management</h1>
+    <h1><?php echo $pagetitle; ?> المواقع </h1>
 </div>
 
 <!-- Domain Input -->
@@ -27,7 +27,7 @@
         <div class="box" id="add-group">
             <div class="box-header with-border">
                 <h3 class="box-title">
-                    Add a new <?php echo $adjective; ?> domain or regex filter
+                     جديد <?php echo $adjective; ?> نطاق او فلتر
                 </h3>
             </div>
             <!-- /.box-header -->
@@ -35,10 +35,10 @@
                 <div class="nav-tabs-custom">
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="active" role="presentation">
-                            <a href="#tab_domain" aria-controls="tab_domain" aria-expanded="true" role="tab" data-toggle="tab">Domain</a>
+                            <a href="#tab_domain" aria-controls="tab_domain" aria-expanded="true" role="tab" data-toggle="tab">النطاق</a>
                         </li>
                         <li role="presentation">
-                            <a href="#tab_regex" aria-controls="tab_regex" aria-expanded="false" role="tab" data-toggle="tab">RegEx filter</a>
+                            <a href="#tab_regex" aria-controls="tab_regex" aria-expanded="false" role="tab" data-toggle="tab">فلتر بالاسم</a>
                         </li>
                     </ul>
                     <div class="tab-content">
@@ -47,12 +47,12 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="new_domain">Domain:</label>
+                                        <label for="new_domain"> النطاق:</label>
                                             <input id="new_domain" type="url" class="form-control active" placeholder="Domain to be added" autocomplete="off" spellcheck="false" autocapitalize="none" autocorrect="off">
                                     </div>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <label for="new_domain_comment">Comment:</label>
+                                    <label for="new_domain_comment"> وصف للموقع:</label>
                                     <input id="new_domain_comment" type="text" class="form-control" placeholder="Description (optional)">
                                 </div>
                             </div>
@@ -60,8 +60,8 @@
                                 <div class="col-md-12">
                                     <div>
                                         <input type="checkbox" id="wildcard_checkbox">
-                                        <label for="wildcard_checkbox"><strong>Add domain as wildcard</strong></label>
-                                        <p>Check this box if you want to involve all subdomains. The entered domain will be converted to a RegEx filter while adding.</p>
+                                        <label for="wildcard_checkbox"><strong> اضافة النطاقات الفرعية </strong></label>
+                                        <p>حدد هذا المربع إذا كنت تريد تضمين جميع المجالات الفرعية. سيتم تحويل المجال الذي تم إدخاله إلى عامل تصفية.</p>
                                     </div>
                                 </div>
                             </div>
@@ -71,17 +71,17 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="new_regex">Regular Expression:</label>
+                                        <label for="new_regex">تعبير عن موقع :</label>
                                         <input id="new_regex" type="text" class="form-control active" placeholder="RegEx to be added">
                                     </div>
                                     <div class="form-group">
-                                        <strong>Hint:</strong> Need help to write a proper RegEx rule? Have a look at our online
+                                        <strong> تلميح:</strong> هل تحتاج إلى مساعدة في كتابة قاعدة RegEx مناسبة؟ الق نظرة على موقعنا على الانترنت
                                         <a href="https://docs.pi-hole.net/ftldns/regex/tutorial" rel="noopener" target="_blank">
-                                            regular expressions tutorial</a>.
+                                            برنامج تعليمي عن التعبيرات العادية</a>.
                                     </div>
                                 </div>
                                 <div class="form-group col-md-6">
-                                        <label for="new_regex_comment">Comment:</label>
+                                        <label for="new_regex_comment"> تعليق:</label>
                                         <input id="new_regex_comment" type="text" class="form-control" placeholder="Description (optional)">
                                 </div>
                             </div>
@@ -91,11 +91,11 @@
                 <div class="btn-toolbar pull-right" role="toolbar" aria-label="Toolbar with buttons">
                     <?php if ( $type !== "white" ) { ?>
                     <div class="btn-group" role="group" aria-label="Third group">
-                        <button type="button" class="btn btn-primary" id="add2black">Add to Blacklist</button>
+                        <button type="button" class="btn btn-primary" id="add2black">إضافة الى القائمة السوداء</button>
                     </div>
                     <?php } if ( $type !== "black" ) { ?>
                     <div class="btn-group" role="group" aria-label="Third group">
-                        <button type="button" class="btn btn-primary" id="add2white">Add to Whitelist</button>
+                        <button type="button" class="btn btn-primary" id="add2white">إضافة الى القائمة البيضاء</button>
                     </div>
                     <?php } ?>
                 </div>
@@ -112,7 +112,7 @@
         <div class="box" id="domains-list">
             <div class="box-header with-border">
                 <h3 class="box-title">
-                    List of <?php echo $adjective; ?> entries
+                    قائمة <?php echo $adjective; ?> الإدخال
                 </h3>
             </div>
             <!-- /.box-header -->
@@ -121,16 +121,16 @@
                     <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Domain/RegEx</th>
-                        <th>Type</th>
-                        <th>Status</th>
-                        <th>Comment</th>
-                        <th>Group assignment</th>
-                        <th>Action</th>
+                        <th> النطاق/التعبير</th>
+                        <th> النوع </th>
+                        <th> الحالة</th>
+                        <th> تعليق </th>
+                        <th> مهام المجموعة </th>
+                        <th>الأمر</th>
                     </tr>
                     </thead>
                 </table>
-                <button type="button" id="resetButton" class="btn btn-default btn-sm text-red hidden">Reset sorting</button>
+                <button type="button" id="resetButton" class="btn btn-default btn-sm text-red hidden"> إعادة تنسيق الفلتر</button>
             </div>
             <!-- /.box-body -->
         </div>
