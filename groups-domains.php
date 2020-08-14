@@ -9,10 +9,10 @@
     $type = "all";
     $pagetitle = "نطاقات";
     $adjective = "";
-    if (isset($_GET['type']) && ($_GET['type'] === "البيضــ" || $_GET['type'] === "السود")) {
+    if (isset($_GET['type']) && ($_GET['type'] === "white" || $_GET['type'] === "black")) {
         $type = $_GET['type'];
-        $pagetitle = ucfirst($type)."اء";
-        $adjective = $type."اء";
+        $pagetitle = ucfirst($type)."البيضاء";
+        $adjective = $type."السوداء";
     }
 ?>
 
