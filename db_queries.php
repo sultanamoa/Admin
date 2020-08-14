@@ -28,7 +28,7 @@
               <div class="input-group-addon">
                 <i class="far fa-clock"></i>
               </div>
-              <input type="button" class="form-control pull-right" id="querytime" value="Click to select date and time range">
+              <input type="button" class="form-control pull-right" id="querytime" value=" انقر هنا لتحديد التاريخ والوقت ">
             </div>
           </div>
         </div>
