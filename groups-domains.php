@@ -112,7 +112,7 @@
         <div class="box" id="domains-list">
             <div class="box-header with-border">
                 <h3 class="box-title">
-                    قائمة <?php echo $adjective; ?> الإدخال
+                     <?php echo $adjective; ?> لإدخال قائمة
                 </h3>
             </div>
             <!-- /.box-header -->
