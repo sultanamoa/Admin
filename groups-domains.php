@@ -11,8 +11,8 @@
     $adjective = "";
     if (isset($_GET['type']) && ($_GET['type'] === "white" || $_GET['type'] === "black")) {
         $type = $_GET['type'];
-        $pagetitle = ucfirst($type)."البيضاء";
-        $adjective = $type."السوداء";
+        $pagetitle = ucfirst($type)."";
+        $adjective = $type."";
     }
 ?>
 
@@ -27,7 +27,7 @@
         <div class="box" id="add-group">
             <div class="box-header with-border">
                 <h3 class="box-title">
-                     جديد <?php echo $adjective; ?> نطاق او فلتر
+                     جديد <?php echo $adjective; ?> نطاقات اوفلتر 
                 </h3>
             </div>
             <!-- /.box-header -->
