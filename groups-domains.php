@@ -11,8 +11,8 @@
     $adjective = "";
     if (isset($_GET['type']) && ($_GET['type'] === "white" || $_GET['type'] === "black")) {
         $type = $_GET['type'];
-        $pagetitle = ucfirst($type)."";
-        $adjective = $type."";
+        $pagetitle = ucfirst($type)."list";
+        $adjective = $type."listed";
     }
 ?>
 
