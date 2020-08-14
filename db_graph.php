@@ -9,14 +9,14 @@
 ?>
 
 <div class="page-header">
-    <h1>Compute graphical statistics from the Pi-hole query database</h1>
+    <h1>يمكنك من هذه القائمة القيام بعمليات احصائية لقاعدة بيانات النظام لمدة معينة</h1>
 </div>
 <div class="row">
   <div class="col-md-12">
     <div class="box">
       <div class="box-header with-border">
         <h3 class="box-title">
-          Select date and time range
+          قم بختيار التاريخ والوقت
         </h3>
       </div>
       <div class="box-body">
@@ -38,7 +38,7 @@
 <div class="row">
   <div class="col-md-12">
     <div id="timeoutWarning" class="alert alert-warning alert-dismissible fade in" role="alert" hidden>
-        Depending on how large of a range you specified, the request may time out while Pi-hole tries to retrieve all the data.<br/><span id="err"></span>
+        بناء على التاريخ والوقت المختار.. قد تنتهي مدةالطلب بينما يحاول النظام استرداد البيانات <br/><span id="err"></span>
     </div>
   </div>
 </div>
@@ -48,7 +48,7 @@
     <div class="box" id="queries-over-time">
       <div class="box-header with-border">
         <h3 class="box-title">
-          Queries over the selected time period
+          الإحصائية بناء على التاريخ والوقت المختار
         </h3>
       </div>
       <div class="box-body">
