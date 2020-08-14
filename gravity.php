@@ -9,20 +9,20 @@
 ?>
 <!-- Title -->
 <div class="page-header">
-    <h1>Update Gravity (list of blocked domains)</h1>
+    <h1> تحديث قائمة الموقع المحجوبة في  (نظام المجموعات) </h1>
 </div>
 
 <!-- Alerts -->
 <div id="alInfo" class="alert alert-info alert-dismissible fade in" role="alert" hidden>
     <button type="button" class="close" data-hide="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    Updating... this may take a while. <strong>Please do not navigate away from or close this page.</strong>
+    تحديث .. قد يستغرق بعضا من الوقت. <strong> الرجاء عدم مغادرة الصفحة اثناء التحديث</strong>
 </div>
 <div id="alSuccess" class="alert alert-success alert-dismissible fade in" role="alert" hidden>
     <button type="button" class="close" data-hide="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-    Success!
+    تهانينا !
 </div>
 
-<button type="button" id="gravityBtn" class="btn btn-lg btn-primary btn-block">Update</button>
+<button type="button" id="gravityBtn" class="btn btn-lg btn-primary btn-block"> تحديث </button>
 <pre id="output" style="width: 100%; height: 100%;" hidden></pre>
 
 <script src="scripts/pi-hole/js/gravity.js"></script>
