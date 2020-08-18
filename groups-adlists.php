@@ -11,6 +11,9 @@
 <!-- Title -->
 <div class="page-header">
     <h1>قائمة التحكم بمجموعات روابط المواقع</h1>
+	 <h3 class="box-title">
+                    في هذه القائمة تستطيع ان تجمع جميع المواقع في رابط واحد وتضعها هنا وسوف يتمكن النظام بعد تنفيذ الأمر من قراءتها وتنفيذها
+                </h3>
 </div>
 
 <!-- Domain Input -->
@@ -27,17 +30,17 @@
             <div class="box-body">
                 <div class="row">
                     <div class="form-group col-md-6">
-                        <label for="new_address">العنوان:</label>
+                        <label for="new_address"> :العنوان</label>
                         <input id="new_address" type="text" class="form-control" placeholder="URL or space-separated URLs" autocomplete="off" spellcheck="false" autocapitalize="none" autocorrect="off">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="new_comment">ملاحظة:</label>
+                        <label for="new_comment">:ملاحظة </label>
                         <input id="new_comment" type="text" class="form-control" placeholder="Adlist description (optional)">
                     </div>
                 </div>
             </div>
             <div class="box-footer clearfix">
-                <strong>الطلبات:</strong>
+                <strong> :الطلبات</strong>
                 <ol>
                     <li> الرجاء تشغيل <code> نظام المراقبة </code> او القيام بتحديث مصادر المواقع <a href="gravity.php"> مباشرة </a> بعد تعديل القوائم الخاصة بك </li>
                     <li> الروابط يمكنك اضافتها دفعة واحدة مع جعل مسافة بينهما  <i>مميز</i> العنوان مع مسافة </li>
