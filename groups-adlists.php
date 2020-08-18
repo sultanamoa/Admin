@@ -42,7 +42,7 @@
             <div class="box-footer clearfix">
                 <strong> :الطلبات</strong>
                 <ol>
-                    <li> الرجاء تشغيل <code> نظام المراقبة </code> او القيام بتحديث مصادر المواقع <a href="gravity.php"> مباشرة </a> بعد تعديل القوائم الخاصة بك </li>
+                    <li> الرجاء تشغيل <code> pihole -G </code> او القيام بتحديث مصادر المواقع <a href="gravity.php"> مباشرة </a> بعد تعديل القوائم الخاصة بك </li>
                     <li> الروابط يمكنك اضافتها دفعة واحدة مع جعل مسافة بينهما  <i>مميز</i> العنوان مع مسافة </li>
                 </ol>
                 <button type="button" id="btnAdd" class="btn btn-primary pull-right">اضافة</button>
