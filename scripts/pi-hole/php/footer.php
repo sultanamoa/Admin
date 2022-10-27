@@ -62,7 +62,7 @@
     <footer class="main-footer">
         <div class="row row-centered text-center">
             <div class="col-xs-12 col-sm-6">
-                <strong><a href="https://twitter.com/zoz_alotaibi" rel="noopener" target="_blank"><i class="fa fa-heart text-red"></i> أنقر هنا</a> لمزيد من المعلومات التقنية </strong> 
+                <strong><a href="https://twitter.com/sultan_alhajlah" rel="noopener" target="_blank"><i class="fa fa-heart text-red"></i> أنقر هنا</a> لمزيد من المعلومات التقنية </strong> 
 				</div>
 				<div class="row row-centered text-center">
 				<strong> قد تكون هناك اعلانات تخرج من حين لاخر وهذا بسبب ان الاعلان متغير بتغير الروابط المستخدمة في نفس الفديو </strong>
